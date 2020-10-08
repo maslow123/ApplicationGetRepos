@@ -1,10 +1,9 @@
-require('dotenv').config();
 const express = require('express');
+const app = express();
 
 // Routes
 const reposRouter = require('./routes/repos');
 
-const app = express();
 
 // Routing
 app.use('/repos', reposRouter);
